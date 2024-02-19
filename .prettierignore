@@ -1,0 +1,16 @@
+# Vitepress Output
+dist/
+
+# Node modules
+node_modules/
+
+# Test Coverage
+coverage/
+
+# Public Assets
+public/
+
+cache/
+.vscode/
+auto-imports.d.ts
+pnpm-lock.yaml
