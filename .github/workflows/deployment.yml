@@ -37,17 +37,3 @@ jobs:
       # 构建
       - name: Build
         run: pnpm build
-
-      # 部署
-      - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.2.11
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
-          # 删除服务器上目录里所有文件
-          # ARGS: '-avz --delete'
-          # 项目 build 后静态文件位置
-          SOURCE: './dosc/dist/'
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.TARGET }}

@@ -25,6 +25,7 @@ dist
 # VitePress files
 .vitepress/cache/
 .vitepress/dist/
+docs/.vitepress/cache/
 .temp
 # Env files
 .env.*.local
