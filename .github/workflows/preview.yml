@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
         with:
-          repository: kongying-tavern/docs
+          repository: snowlinouo/docs-test
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
@@ -36,7 +36,7 @@ jobs:
 
       # 构建
       - name: Build
-        run: pnpm vitepress build --outDir _dist --base /
+        run: pnpm vitepress build --outDir _dist docs
 
       - name: download pr artifact
         uses: dawidd6/action-download-artifact@v2
