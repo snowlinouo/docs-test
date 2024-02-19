@@ -34,7 +34,7 @@
 }
 
 .font-full {
-  --vp-font-family-base: zh-cn-full, zh-cn-min, -apple-system,
+  --vp-font-family-base: -apple-system,
     BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto,
     'PingFang SC', miui, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif !important;
 }
