@@ -60,14 +60,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-import { useData, withBase } from 'vitepress'
-
-const { theme, page, localeIndex, frontmatter } = useData()
-const editLink =
-  'https://github.com/kongying-tavern/docs/edit/main/src/:path'.replace(
-    /:path/g,
-    page.value.filePath,
-  )
-</script>
