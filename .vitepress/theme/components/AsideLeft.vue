@@ -23,7 +23,7 @@
         >
         <a
           class="flex items-center gap-1.5 hover:color-[var(--vp-c-text-1)] transition-200"
-          href="https://github.com/kongying-tavern/docs/"
+          href="https://github.com/snowlinouo/test-docs/"
           rel="noopener noreferrer"
           target="_blank"
         >

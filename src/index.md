@@ -1,6 +1,7 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: 雪鈴網站
+titleTemplate: 雪鈴網站
 
 hero:
   name: "雪鈴網站"
@@ -12,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 前往網站
-      link: /markdown-examples
+      link: /info
     - theme: alt
       text: 前往 GitHub
       link: https://github.com/snowlinouo/Snowlin-VitePress

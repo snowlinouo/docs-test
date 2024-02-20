@@ -100,7 +100,7 @@ const Card: FunctionalComponent<CardProps> = ({
     icon === ''
       ? h('img', {
           class: 'vp-card-logo no-zoomable',
-          src: withBase(logo || '/imgs/logo_128.png'),
+          src: withBase(logo || '/imgs/logo.png'),
         })
       : h('label', {
           class: `vp-card-icon ${icon}`,
@@ -113,7 +113,7 @@ const Card: FunctionalComponent<CardProps> = ({
         innerHTML: desc
           ? desc
           : isRelativeLink(link)
-            ? `https://yuanshen.site/docs/${
+            ? `https://testdocs.snowlinlan.com/${
                 link.substring(0, 3).replace(/(\.\/|\/)/g, '') +
                 link.substring(3)
               }`

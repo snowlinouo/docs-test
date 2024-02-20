@@ -1,3 +1,7 @@
+.vitepress/config-copy.mts
+/src/test/community.md
+/src/test/download-client.md
+
 # MacOS Desktop Services Store
 .DS_Store
 .AppleDouble
@@ -25,8 +29,6 @@ dist
 # VitePress files
 .vitepress/cache/
 .vitepress/dist/
-docs/.vitepress/cache/
-docs/.vitepress/dist/
 .temp
 # Env files
 .env.*.local

@@ -1,10 +1,14 @@
 ---
-title: 光遇 BUG
-description: 光遇 BUG
-layout: doc
-bannerExpiryDate: 2024/2/19
-aside: true
-comment: true
+aside: false
+titleTemplate: :title - 光遇 | 雪鈴的窩
+next:
+  text: '首頁'
+  link: '../index.md'
+prev:
+  text: '首頁'
+  link: '../index.md'
+title: 光遇 Bug
+description: 這邊為光遇於 0.18.5 版本出現的服裝 Bug 統計頁面
 ---
 
 # 光遇服裝閃退 Bug
