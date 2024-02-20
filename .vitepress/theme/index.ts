@@ -26,7 +26,7 @@ export default {
   },
   enhanceApp({ app }) {
     googleAnalytics({
-      id: 'G-Q2K9DXZCEY',
+      id: 'G-XSVZ1SQKJK',
       debug: false,
     })
     app.component('Link', Link)
