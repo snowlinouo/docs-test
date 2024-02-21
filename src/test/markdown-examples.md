@@ -1,3 +1,9 @@
+---
+title: Markdown Extension Examples
+description: Markdown Extension Examples
+titleTemplate: 雪鈴的窩
+---
+
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.

@@ -1,14 +1,14 @@
 ---
-aside: false
+title: 光遇 Bug
 titleTemplate: :title - 光遇 | 雪鈴的窩
+description: 這邊為光遇於 0.18.5 版本出現的服裝 Bug 統計頁面
+aside: false
 next:
   text: '首頁'
   link: '../index.md'
 prev:
   text: '首頁'
   link: '../index.md'
-title: 光遇 Bug
-description: 這邊為光遇於 0.18.5 版本出現的服裝 Bug 統計頁面
 ---
 
 # 光遇服裝閃退 Bug

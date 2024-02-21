@@ -23,7 +23,7 @@
         >
         <a
           class="flex items-center gap-1.5 hover:color-[var(--vp-c-text-1)] transition-200"
-          href="https://github.com/kongying-tavern/docs/"
+          href="https://github.com/snowlinouo/docs-test"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -46,7 +46,7 @@
           class="flex items-center gap-1.5 hover:color-[var(--vp-c-text-1)] transition-200"
           :href="
             withBase(
-              (localeIndex === 'root' ? '' : '/' + localeIndex) + '/support-us',
+              (localeIndex === 'root' ? '' : '/' + localeIndex) + '/sky/sky-bug',
             )
           "
           rel="noopener noreferrer"
@@ -67,7 +67,7 @@ import { useData, withBase } from 'vitepress'
 const { theme, page, localeIndex, frontmatter } = useData()
 
 const editLink =
-  'https://github.com/kongying-tavern/docs/edit/main/src/:path'.replace(
+  'https://github.com/snowlinouo/docs-test/edit/main/src/:path'.replace(
     /:path/g,
     page.value.filePath,
   )

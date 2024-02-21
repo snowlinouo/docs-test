@@ -16,6 +16,14 @@ export interface CustomConfig {
       }[]
     }[]
   }
+  asideLinks: {
+    title: string
+    starOnGitHub: string
+    contactUsText: string
+    contactUsLink: string
+    sponsor: string
+    editLink: string
+  }
   payment?: Record<
     string,
     {
