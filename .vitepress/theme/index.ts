@@ -39,6 +39,7 @@ export default {
     app.component('Coins', Coins)
     app.component('VPCard', Card)
     app.component('LinkGrid', LinkGrid)
+    app.component('Badge', VPBadge)
   },
   setup() {
     const route = useRoute()
