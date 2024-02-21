@@ -1,3 +1,8 @@
+@font-face {
+  font-family: zh-cn-min;
+  src: url('../../../src/public/fonts/zh-cn-min.woff');
+}
+
 /**
  * Colors
  * -------------------------------------------------------------------------- */
@@ -7,7 +12,7 @@
   --vp-c-indigo-2: #3aa374;
   --vp-c-indigo-3: #008858;
   --vp-c-indigo-soft: rgba(0, 108, 69 0.16);
-  --vp-font-family-base: -apple-system, BlinkMacSystemFont,
+  --vp-font-family-base: zh-cn-min, -apple-system, BlinkMacSystemFont,
     'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', miui,
     'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
   --vp-c-accent: #35495e;
@@ -31,10 +36,12 @@
 
   --vp-custom-block-tip-text: #003100;
   --vp-custom-block-tip-bg: #e6f6e6;
+
+  --skeleton-animation-gradient: rgba(0, 0, 0, 0.04);
 }
 
 .font-full {
-  --vp-font-family-base: -apple-system,
+  --vp-font-family-base: zh-cn-full, zh-cn-min, -apple-system,
     BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto,
     'PingFang SC', miui, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif !important;
 }
@@ -61,6 +68,8 @@
   /* fix contrast on gray cards: check the same above (this is the default) */
   --vp-c-text-dark-2: rgba(235, 235, 235, 0.6);
   --vp-c-tip-1: var(v--vp-c-tip-1) --nav-c-bg: rgba(30, 30, 32, 0.5);
+
+  --skeleton-animation-gradient: rgba(255, 255, 255, 0.06);
 }
 
 /**

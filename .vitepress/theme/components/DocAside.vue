@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="!frontmatter == false"
+    v-if="frontmatter.docAside !== false"
     class="hidden lg:block space-y-6 !mt-6 pl-4"
   >
     <div class="space-y-3">
@@ -23,7 +23,7 @@
         >
         <a
           class="flex items-center gap-1.5 hover:color-[var(--vp-c-text-1)] transition-200"
-          href="https://github.com/snowlinouo/test-docs/"
+          href="https://github.com/kongying-tavern/docs/"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -44,8 +44,10 @@
           }}</span></a
         ><a
           class="flex items-center gap-1.5 hover:color-[var(--vp-c-text-1)] transition-200"
-          @click="
-            go((localeIndex === 'root' ? '' : localeIndex) + '/community')
+          :href="
+            withBase(
+              (localeIndex === 'root' ? '' : '/' + localeIndex) + '/support-us',
+            )
           "
           rel="noopener noreferrer"
           target="_self"
@@ -60,15 +62,13 @@
 </template>
 
 <script lang="ts" setup>
-import { useData, withBase, useRouter } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 
 const { theme, page, localeIndex, frontmatter } = useData()
-const { go } = useRouter()
+
 const editLink =
-  'https://github.com/snowlinouo/docs-test/edit/main/src/:path'.replace(
+  'https://github.com/kongying-tavern/docs/edit/main/src/:path'.replace(
     /:path/g,
     page.value.filePath,
   )
 </script>
-:href=" withBase( '/' + (localeIndex === 'root' ? '' : localeIndex) +
-'/support-us', ) "

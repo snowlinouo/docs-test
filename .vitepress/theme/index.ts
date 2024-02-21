@@ -1,5 +1,6 @@
 import { onMounted, watch, nextTick, defineAsyncComponent, h } from 'vue'
-import { useRoute, inBrowser, useData } from 'vitepress'
+import { useRoute, useData } from 'vitepress'
+import { VPBadge } from 'vitepress/theme'
 import mediumZoom from 'medium-zoom'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import Link from './components/Link.vue'
@@ -11,6 +12,8 @@ import LinkGrid from '../theme/components/LinkGrid.vue'
 import 'uno.css'
 import './styles/vars.css'
 import './styles/main.css'
+import './styles/timeline.css'
+import './styles/kbd.css'
 
 export default {
   ...DefaultTheme,
@@ -21,6 +24,9 @@ export default {
         h(defineAsyncComponent(() => import('./components/Banner.vue'))),
       'doc-before': h(
         defineAsyncComponent(() => import('./components/DocHeader.vue')),
+      ),
+      'aside-outline-after': h(
+        defineAsyncComponent(() => import('./components/DocAside.vue')),
       ),
     })
   },

@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="frontmatter.title"
+    v-if="frontmatter.docHeader !== false && frontmatter.layout == 'doc'"
     class="docs-header slide-enter relative border-b-solid border-b-color-[var(--vp-c-divider)] pb-8 mb-4"
   >
     <div
@@ -18,13 +18,18 @@
           <h1
             class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight"
           >
-            {{ frontmatter.title }}
+            {{
+              frontmatter.title ||
+              page.title ||
+              page.relativePath.replace('.md', '')
+            }}
           </h1>
-          <!---->
         </div>
-        <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
-          {{ frontmatter.description }}
-        </p>
+        <p
+          v-if="frontmatter.description"
+          v-html="frontmatter.description"
+          class="mt-4 text-lg text-gray-500 dark:text-gray-400"
+        ></p>
       </div>
     </div>
   </div>
@@ -34,7 +39,7 @@
 import { useData } from 'vitepress'
 import { ref, watchEffect } from 'vue'
 
-const { frontmatter } = useData()
+const { frontmatter, page } = useData()
 
 let match = ref<string | boolean>(false)
 
