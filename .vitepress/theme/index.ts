@@ -9,6 +9,8 @@ import googleAnalytics from '../plugins/googleAnalytics'
 import Card from '../theme/components/Card'
 import LinkGrid from '../theme/components/LinkGrid.vue'
 
+import type { Theme } from 'vitepress'
+
 import 'uno.css'
 import './styles/vars.css'
 import './styles/main.css'
@@ -37,7 +39,7 @@ export default {
     })
     app.component('Link', Link)
     app.component('Coins', Coins)
-    app.component('VPCard', Card)
+    app.component('Card', Card)
     app.component('LinkGrid', LinkGrid)
     app.component('Badge', VPBadge)
   },
@@ -57,7 +59,7 @@ export default {
         }),
     )
   },
-}
+} satisfies Theme
 
 const loadFont = () => {
   const font = new FontFace('zh-cn-full', 'url(/docs/fonts/zh-cn-full.ttf)', {
