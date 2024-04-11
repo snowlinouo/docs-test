@@ -84,6 +84,7 @@ const Card: FunctionalComponent<CardProps> = ({
   let icon = ''
 
   const iconMap = {
+    'modrinth.com': 'i-custom-modrinth',
     'bilibili.com': 'i-custom-bilibili',
     'txc.qq.com': 'i-custom-txc',
     'support.qq.com': 'i-custom-txc',

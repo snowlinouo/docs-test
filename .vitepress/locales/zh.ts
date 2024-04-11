@@ -73,6 +73,16 @@ function nav(): DefaultTheme.NavItem[] {
       link: '/',
     },
     {
+      text: 'Minecraft',
+      activeMatch: `^/minecraft/`,
+      items: [
+        {
+          text: 'Masa 全家桶翻譯',
+          link: '/minecraft/masa-family-bucket-translationpack',
+        }
+      ],
+    },
+    {
       text: '光遇',
       activeMatch: `^/sky/`,
       items: [
