@@ -46,6 +46,7 @@ export default defineConfig({
   srcExclude: [],
   scrollOffset: 'header',
   cleanUrls: true,
+  lastUpdated: true,
   sitemap: {
     hostname: 'https://testdocs.snowlinlan.com',
   },
