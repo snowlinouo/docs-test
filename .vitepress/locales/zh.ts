@@ -3,12 +3,12 @@ import { socialList } from '../theme/composables/socialList'
 import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 import type { CustomConfig } from './types'
 
-export const META_URL = 'https://testdocs.snowlinlan.com/'
+export const META_URL = 'https://docs.snowlinlan.com/'
 export const META_TITLE = '雪鈴的窩'
 export const META_DESCRIPTION = '一個溫暖的地方'
 export const META_KEYWORDS =
   '雪鈴, SnowLin'
-export const META_IMAGE = 'https://testdocs.snowlinlan.com/imgs/logo.jpg'
+export const META_IMAGE = 'https://docs.snowlinlan.com/imgs/logo.jpg'
 export const LOCAL_CODE = 'zh-TW'
 export const LOCAL_BASE = ''
 

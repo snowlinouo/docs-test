@@ -48,7 +48,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://testdocs.snowlinlan.com',
+    hostname: 'https://docs.snowlinlan.com',
   },
   themeConfig: {
     search: {
@@ -119,7 +119,7 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: `https://testdocs.snowlinlan.com/imgs/logo.png`,
+        href: `https://docs.snowlinlan.com/imgs/logo.png`,
         type: 'image/png',
       },
     ],
@@ -128,14 +128,14 @@ export default defineConfig({
       {
         rel: 'alternate',
         hreflang: 'zh',
-        href: 'https://testdocs.snowlinlan.com',
+        href: 'https://docs.snowlinlan.com',
       },
     ],
     [
       'link',
       {
         rel: 'alternate',
-        href: `https://testdocs.snowlinlan.com/feed.rss`,
+        href: `https://docs.snowlinlan.com/feed.rss`,
         type: 'application/rss',
       },
     ],
@@ -143,7 +143,7 @@ export default defineConfig({
       'link',
       {
         rel: 'alternate',
-        href: `https://testdocs.snowlinlan.com/imgs/logo.png`,
+        href: `https://docs.snowlinlan.com/imgs/logo.png`,
         type: 'image/x-icon',
       },
     ],
@@ -193,7 +193,7 @@ export default defineConfig({
       'meta',
       {
         name: 'og:url',
-        content: `https://testdocs.snowlinlan.com/${
+        content: `https://docs.snowlinlan.com/${
           siteConfig.site.base
         }${pageData.relativePath.replace('.md', '')}`,
       },
@@ -202,7 +202,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:url',
-        content: `https://testdocs.snowlinlan.com/${
+        content: `https://docs.snowlinlan.com/${
           siteConfig.site.base
         }${pageData.relativePath.replace('.md', '')}`,
       },

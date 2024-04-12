@@ -130,7 +130,7 @@ const Card: FunctionalComponent<CardProps> = ({
   }
 
   const getlogoLink = (i) => {
-    if (i === 'self' || link.includes('snowlinlan.com') || isRelativeLink(link))
+    if (i === 'self' || link.includes('docs.snowlinlan.com') || isRelativeLink(link))
       return withBase('/imgs/logo.png')
     if (i === '') return 'no-logo'
     return isRelativeLink(i) ? withBase(i) : i
@@ -170,7 +170,7 @@ const Card: FunctionalComponent<CardProps> = ({
               innerHTML: desc
                 ? desc
                 : isRelativeLink(link)
-                  ? `https://testdocs.snowlinlan.com/${link.substring(0, 3).replace(/(\.\/|\/)/g, '') + link.substring(3)}`
+                  ? `https://docs.snowlinlan.com/${link.substring(0, 3).replace(/(\.\/|\/)/g, '') + link.substring(3)}`
                   : link,
             }),
           ],

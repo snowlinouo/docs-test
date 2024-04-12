@@ -5,7 +5,7 @@ const core = require('@actions/core')
 
 function init() {
   const DEPLOY_DOMAIN =
-    process.env.DEPLOY_DOMAIN || 'https://testdocs.snowlinlan.com/'
+    process.env.DEPLOY_DOMAIN || 'https://docs.snowlinlan.com/'
   let result = ''
   let outRange = false
   console.log(process.env.DEPLOY_DOMAIN, DEPLOY_DOMAIN)

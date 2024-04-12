@@ -1,6 +1,6 @@
 ---
 title: 關於我
-description: 友情链接
+description: 關於我的一些連結部分
 titleTemplate: 雪鈴的窩
 layout: doc
 ---

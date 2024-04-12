@@ -16,7 +16,7 @@ hero:
       link: /info
     - theme: alt
       text: 前往 GitHub
-      link: https://github.com/snowlinouo/Snowlin-VitePress
+      link: https://github.com/snowlinouo/snowlin-blog-docs
 
 features:
   - title: 範例 A
