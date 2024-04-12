@@ -11,7 +11,7 @@ prev:
   link: '../index.md'
 ---
 
-# 模組包下載
+# 資源包下載
 
 ```card
 title: 下載翻譯包
