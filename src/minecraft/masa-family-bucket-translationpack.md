@@ -14,7 +14,7 @@ prev:
 # 資源包下載
 
 ```card
-title: 下載翻譯包
+title: 下載資源包
 desc: 點我前往 Modrinth 頁面
 logo: /svg/modrinth.svg
 link: https://modrinth.com/resourcepack/masa-family-bucket-translationpack/versions
